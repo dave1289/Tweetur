@@ -4,6 +4,9 @@ h1 {
     color: royalblue;
     text-decoration: underline;
     margin:auto;
+    text-shadow: 3px 3px blue;
+    border: royalblue 50px solid;
+    border-radius: 30px;
 }
 
 body {
