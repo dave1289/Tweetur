@@ -27,6 +27,15 @@ friendsList.addEventListener('click', function(e){
     };
 })
 
+friendsList.addEventListener('click', function(e){
+    if (e.target.tagName === 'LI') {
+        const star = document.createElement('span');
+        star.innerHTML = '&#9733;'
+        e.target.prepend(star);
+    };
+})
+
+
 form.addEventListener('submit', function(e){
     e.preventDefault();
     console.log(input.value)
