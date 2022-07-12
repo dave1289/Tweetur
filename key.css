@@ -72,3 +72,9 @@ img {
     display:flex;
     justify-content: flex-end;
 }
+
+.best-friend {
+    color:magenta;
+    font-weight: bold;
+    font-size: 1.5em;
+}
