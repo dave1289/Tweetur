@@ -1,7 +1,8 @@
-const form = document.querySelector('#add-friend')
-const input = document.querySelector('#first-name')
-const friendsList = document.querySelector('#friends-list')
-const removeFriend = document.querySelectorAll('li button')
+const form = document.querySelector('#add-friend');
+const input = document.querySelector('#first-name');
+const friendsList = document.querySelector('#friends-list');
+const removeFriend = document.querySelectorAll('li button');
+const ul = document.querySelector('ul');
 
 document.querySelector('input').addEventListener('keydown', function(e){
     console.log('KEY PRESSED', e.key);
@@ -30,6 +31,8 @@ friendsList.addEventListener('click', function(e){
 friendsList.addEventListener('click', function(e){
     if (e.target.tagName === 'LI') {
         const star = document.createElement('span');
+        var widthUl = ul.offsetWidth;
+        ul.style.width = (widthUl+5)+'px';
         star.innerHTML = '&#9733;'
         e.target.prepend(star);
     };
