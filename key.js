@@ -32,7 +32,7 @@ friendsList.addEventListener('click', function(e){
     if (e.target.tagName === 'LI') {
         const star = document.createElement('span');
         var widthUl = ul.offsetWidth;
-        ul.style.width = (widthUl+5)+'px';
+        ul.style.width = (widthUl+1)+'px';
         star.innerHTML = '&#9733;'
         e.target.prepend(star);
     };
