@@ -20,6 +20,13 @@ friendsList.addEventListener('click', function(e){
     };
 })
 
+//following allows toggle "best-friend" class
+friendsList.addEventListener('click', function(e){
+    if (e.target.tagName === 'LI') {
+        e.target.classList.toggle('best-friend')
+    };
+})
+
 form.addEventListener('submit', function(e){
     e.preventDefault();
     console.log(input.value)
