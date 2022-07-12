@@ -78,3 +78,31 @@ img {
     font-weight: bold;
     font-size: 1.5em;
 }
+
+#main-page {
+    display: flex;
+    justify-items: flex-start;
+}
+
+#posts {
+    margin-top: 15px;
+    display: flex;
+    border: solid black 12px;
+    border-radius: 15px;
+    width: 80%;
+    height: 900px;
+    background-color: royalblue;
+    color: white;
+    text-decoration: underline;
+    flex-direction:column;
+    justify-self: flex-end;    
+}
+
+p {
+    border: black solid 5px;
+    border-radius: 5px;
+}
+
+#add-post {
+    height: 50px;
+}
